@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)index -->
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Publishing Company - Free Bootstrap 4 Template by Colorlib</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="./index_files/css" rel="stylesheet">
+    <link href="./index_files/css2" rel="stylesheet">
+
+    <link rel="stylesheet" href="./index_files/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./index_files/animate.css">
+    
+    <link rel="stylesheet" href="./index_files/owl.carousel.min.css">
+    <link rel="stylesheet" href="./index_files/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./index_files/magnific-popup.css">
+    
+    <link rel="stylesheet" href="./index_files/flaticon.css">
+    <link rel="stylesheet" href="./index_files/style.css">
+  <style type="text/css">.scrollax-performance, .scrollax-performance *, .scrollax-performance *:before, .scrollax-performance *:after { pointer-events: none !important; -webkit-animation-play-state: paused !important; animation-play-state: paused !important; };</style><script type="text/javascript" charset="UTF-8" src="./index_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./index_files/util.js"></script></head>
+  <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
+
+
+
+  	<div class="container-fluid px-md-5  pt-4 pt-md-5">
+			<div class="row justify-content-between">
+				<div class="col-md-8 order-md-last">
+					<div class="row">
+						<div class="col-md-6 text-center">
+							<a class="navbar-brand" href="index">Publishing <span>Company</span> <small>Book Publishing Company</small></a>
+						</div>
+						<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
+							<form th:action="@{/author}" th:object="${inquiry}" class="searchform order-lg-last" method="post">
+			          <div class="form-group d-flex">
+			            <input type="text" th:field="*{searchString}" class="form-control pl-3" placeholder="Search">
+			            <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+			          </div>
+			        </form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex">
+					<div class="social-media">
+		    		<p class="mb-0 d-flex">
+		    			<a href="index" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+		    			<a href="index" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+		    			<a href="index" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+		    			<a href="index" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+		    		</p>
+	        </div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container-fluid">
+	    
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="fa fa-bars"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav m-auto">
+	        	<li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+	        	<li class="nav-item"><a href="author" class="nav-link">Author</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+    <section class="hero-wrap" style="background-image: url(&quot;images/bg_1.jpg&quot;); background-position: 50% 0%;" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center">
+          <div class="col-md-8 ftco-animate d-flex align-items-end fadeInUp ftco-animated">
+          	<div class="text w-100">
+				<div class="row justify-content-between">
+					<form th:action="@{/author}" th:object="${author}" method="post">
+						<label for="fname">First name:</label>
+						<input th:field="*{name}" type="text" id="fname" name="fname"><br><br>
+						<label for="fname">profilePicUrl:</label>
+						<input th:field="*{profilePicUrl}" type="text" id="fProfilePicId" name="fname"><br><br>
+						<label for="fname">Description:</label>
+						<input th:field="*{description}" type="text" id="fDescription" name="fname"><br><br>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="ftco-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo"><a href="index">Connect</a></h2>
+              <p>Far far away, behind the word mountains, far from the countries.</p>
+              <ul class="ftco-footer-social list-unstyled mt-2">
+                <li class="ftco-animate"><a href="index"><span class="fa fa-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="index"><span class="fa fa-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="index"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Extra Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="index"><span class="fa fa-chevron-right mr-2"></span>Affiliate Program</a></li>
+                <li><a href="index"><span class="fa fa-chevron-right mr-2"></span>Business Services</a></li>
+                <li><a href="index"><span class="fa fa-chevron-right mr-2"></span>Education Services</a></li>
+                <li><a href="index"><span class="fa fa-chevron-right mr-2"></span>Gift Cards</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Legal</h2>
+              <ul class="list-unstyled">
+                <li><a href="index"><span class="fa fa-chevron-right mr-2"></span>Join us</a></li>
+                <li><a href="index"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
+                <li><a href="index"><span class="fa fa-chevron-right mr-2"></span>Privacy &amp; Policy</a></li>
+                <li><a href="index"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Company</h2>
+              <ul class="list-unstyled">
+                <li><a href="index"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
+                <li><a href="index"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
+                <li><a href="index"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+                <li><a href="index"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+	                <li><a href="index"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="index"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid px-0 py-5 bg-black">
+      	<div class="container">
+      		<div class="row">
+	          <div class="col-md-12">
+		
+	            <p class="mb-0" style="color: rgba(255,255,255,.5);"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	  Copyright ©<script>document.write(new Date().getFullYear());</script>2021 All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib.com</a>
+	  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	          </div>
+	        </div>
+      	</div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"></circle></svg></div>
+
+
+  <script src="./index_files/jquery.min.js"></script>
+  <script src="./index_files/jquery-migrate-3.0.1.min.js"></script>
+  <script src="./index_files/popper.min.js"></script>
+  <script src="./index_files/bootstrap.min.js"></script>
+  <script src="./index_files/jquery.easing.1.3.js"></script>
+  <script src="./index_files/jquery.waypoints.min.js"></script>
+  <script src="./index_files/jquery.stellar.min.js"></script>
+  <script src="./index_files/owl.carousel.min.js"></script>
+  <script src="./index_files/jquery.magnific-popup.min.js"></script>
+  <script src="./index_files/jquery.animateNumber.min.js"></script>
+  <script src="./index_files/scrollax.min.js"></script>
+  <script src="./index_files/js"></script>
+  <script src="./index_files/google-map.js"></script>
+  <script src="./index_files/main.js"></script>
+    
+  
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
